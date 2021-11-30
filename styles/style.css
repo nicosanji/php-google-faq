@@ -1,13 +1,23 @@
 /* HEADER */
 header img {
-  height: 100px;
+  height: 70px;
+}
+header a {
+  text-decoration: none;
+  color: #212529;
+}
+header li:nth-child(5) {
+  border-bottom: 2px solid #0d6efd;
+  margin-bottom: -2px;
 }
 
-/* MAIN */
 
+
+/* MAIN */
 
 
 /* FOOTER */
 
 
 /* UTILITY */
+

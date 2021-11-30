@@ -1,4 +1,11 @@
 <?php
+$headerData = [
+  "Introduzione",
+  "Norme sulla privacy",
+  "Termini di servizio",
+  "Teconologie",
+  "Domande Frequenti"
+];
 
 ?>
 
@@ -20,15 +27,28 @@
 
   <header>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
+      <div class="row w-50 align-items-center">
+        <div class="col flex-grow-0">
           <img src="img/Google-Logo.png" alt="google-logo-img">
         </div>
+        <div class="col p-0">
+          <h2 class="fw-light">Privacy & Termini</h2>
+        </div>
+      </div>
+      <div class="row align-items-center border-bottom border-2">
+        <ul class="d-flex list-unstyled m-0">
+          <?php
+          for ($i = 0; $i < count($headerData); $i++) {
+            echo "<li class='px-3 py-3'><a href=#>$headerData[$i]</a></li>";
+          }
+          ?>
+        </ul>
       </div>
     </div>
   </header>
 
   <main>
+
 
   </main>
 
